@@ -1,5 +1,8 @@
 import React from "react";
 import { ReactQueryDevtools } from "react-query/devtools";
+import HoverBasedPreFetching from "./Prefetching/Hover-based query prefetching";
+import QueryPrefetching from "./Prefetching/QueryPrefetching";
+import StaleTime from "./Prefetching/StaleTime";
 import QueryInvalidation from "./Query Invalidation/QueryInvalidation";
 // import DependentQueries from "./Queries/DependentQueries";
 // import Queries from "./Queries/Queries";
@@ -25,7 +28,10 @@ const App = () => {
       {/* <SeedingInitialQueryDataFromOtherQueries /> */}
       {/* <UsingQueryDataToSeedFutureQueries /> */}
       {/* <RefetchIntervals /> */}
-      <QueryInvalidation />
+      {/* <QueryInvalidation /> */}
+      {/* <QueryPrefetching /> */}
+      {/* <HoverBasedPreFetching /> */}
+      <StaleTime />
       <ReactQueryDevtools />
     </div>
   );
